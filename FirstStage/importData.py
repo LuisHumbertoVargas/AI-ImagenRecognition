@@ -18,10 +18,8 @@ print(firstLine)
 
 print("===================")
 
-rocketText = "We will launch in"
-def OutputRocketText():
-    rocketText = rocketText + " two days"
+def OutputRocketText(days):
+    rocketText = "We will launch in " + str(days) + " days"
+    return print(rocketText)
 
-    return
-
-OutputRocketText()
+OutputRocketText(5)

@@ -53,15 +53,17 @@ def countMoonRocks(rockToID):
 # fileObject = open("rocks.txt")
 # rockList = fileObject.readlines()
 
+
 for rock in rockList:
     countMoonRocks(rock)
 
 # TODO Add a print statement for the other types of rocks: breccia, highland and regolith
 print("Number of Basalt: ", basalt)
-print("Number of Basalt: ", breccia)
-print("Number of Basalt: ", highland)
-print("Number of Basalt: ", regolith)
+print("Number of Breccia: ", breccia)
+print("Number of Highland: ", highland)
+print("Number of Regolith: ", regolith)
 
 # TODO Add other rock types to the "max" and "min" function calls
-print("The max number of one type of rock found was:", max(basalt, breccia, highland, regolith ))
-print("The minimum number of one type of rock found was:", min(basalt, breccia, highland, regolith))
+rocks = [basalt, breccia, highland, regolith]
+print("The max number of one type of rock found was:", max(rocks))
+print("The minimum number of one type of rock found was:", min(rocks))
